@@ -1,13 +1,18 @@
 function chunkArrayInGroups(arr, size) {
    
-   let a = []
+   let trozo = [];
+   let trozosArr = [];
      
      for (let i = 0; i < arr.length; i++) {
         
-        a[i] = arr[i].slice(0, size).split(2);
-        
-     }
-        console.log(a);
+        trozo = arr.splice(0, size);
+        trozosArr.push(trozo);
+      }
+   
+   
+   
+   console.log(trozo);
+   console.log(trozosArr);
 
   
   return arr;
