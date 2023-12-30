@@ -1,24 +1,24 @@
 function sumPrimes(num) {
   
+   let primo = 0;
    
-    let result = 0;
-    
-
-   for (let index = 2; index<num; index++) {
-      if(isPrime(index)){
-         
-          result+= index;
-        console.log(result);
+   for (let i = 2; i <=num; i++) {
+      
+      if(isPrime(i)){
+         primo+= i;
+         console.log(primo);
       }
+      
    }
-
-   return result;
-
+  
+  
+  return primo;
 }
 
+
 function isPrime(num){
-   for (let index = 2; index<num; index++) {
-      if(num % index === 0){
+   for (let i = 2; i<num; i++) {
+      if(num % i === 0){
          
           return false;
         //console.log(result);
@@ -28,4 +28,4 @@ function isPrime(num){
    return true;   
 }
 
-sumPrimes(10);
+sumPrimes(977);
