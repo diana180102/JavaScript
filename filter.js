@@ -116,8 +116,13 @@ const watchList = [
   
   let filteredList ;
 
+<<<<<<< HEAD
  filteredList= watchList.filter(rating => parseFloat(rating.imdbRating) >= 8)
                         .map(({ Title: title, imdbRating: rating }) => ({title, rating}));
+=======
+ filteredList = watchList.filter(rating => parseFloat(rating) > 8)
+                         .map(({ Title: title, imdbRating: rating }) => ({title, rating}));
+>>>>>>> ceaf10d3a79306d4a8b9980deb9ab1e7b48758bd
 
             
   

@@ -8,7 +8,3 @@ function destroyer(arr, ...num) {
 }
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
-
-function destroyer(arr, ...valsToRemove) {
-  return arr.filter(elem => !valsToRemove.includes(elem));
-}
