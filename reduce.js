@@ -112,15 +112,23 @@ const watchList = [
     }
   ];
   
-  // Cambia solo el código debajo de esta línea
-  
-  let filteredList ;
+  function getRating(watchList) {
+    // Cambia solo el código debajo de esta línea
+    let averageRating;
+    
+    averageRating = watchList.filter(director => director.Director === 'Christopher Nolan')
+                             .reduce((sumR, movie,) => sumR + parseFloat(movie.imdbRating), 0)
+                             / watchList.filter(director => director.Director === 'Christopher Nolan').length;
+                             
+        
 
- filteredList= watchList.filter(rating => parseFloat(rating.imdbRating) >= 8)
-                        .map(({ Title: title, imdbRating: rating }) => ({title, rating}));
+    
+    
+    
 
-            
   
-  // Cambia solo el código encima de esta línea
+    // Cambia solo el código encima de esta línea
+    return averageRating;
+  }
   
-  console.log(filteredList);
+  console.log(getRating(watchList));
