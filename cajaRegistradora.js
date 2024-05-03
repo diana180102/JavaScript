@@ -26,7 +26,7 @@ function checkCashRegister(price, cash, cid) {
 
       if(totalCid < change){
         
-        return { status: "INSUFFICIENT_FUNDS", change: [] };
+         return { status: "INSUFFICIENT_FUNDS", change: [] };
 
       }else if (totalCid === change){
         
