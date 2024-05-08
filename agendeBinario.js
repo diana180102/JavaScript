@@ -4,15 +4,17 @@ function binaryAgent(str) {
   
 
   let texto = '';
-
+  
+  //iteramos sobre la cantidad de item dentro del arreglo de cadenaBinaria
   for (let i = 0; i < cadenaBinaria.length; i++) {
 
     let decimal = 0;
 
 
-
+    //SI elemento de cadena binaria tiene 8 bits, ENTONCES va iterar sobre cada uno de los 8 bits
     if (cadenaBinaria[i].length === 8) {
       for (let j = 0; j < 8; j++) {
+        
         if (cadenaBinaria[i].charAt(j) === '1') {
           decimal += Math.pow(2, 7 - j)
 

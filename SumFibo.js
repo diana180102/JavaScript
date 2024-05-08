@@ -15,9 +15,14 @@ function sumFibs(num) {
         
         valorA = valorA + valorPreview;
         valorPreview = valorA - valorPreview; 
-
+      
+      
+  
    }
 
+
+   
+ 
    return result;
    
    
@@ -25,4 +30,7 @@ function sumFibs(num) {
 
 }
 
-sumFibs(4);
+sumFibs(30);
+
+
+

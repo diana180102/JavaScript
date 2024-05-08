@@ -117,7 +117,7 @@ const watchList = [
     let averageRating;
     
     averageRating = watchList.filter(director => director.Director === 'Christopher Nolan')
-                             .reduce((sumR, movie,) => sumR + parseFloat(movie.imdbRating), 0)
+                             .reduce((sumR, movie) => sumR + parseFloat(movie.imdbRating), 0)
                              / watchList.filter(director => director.Director === 'Christopher Nolan').length;
                              
         
